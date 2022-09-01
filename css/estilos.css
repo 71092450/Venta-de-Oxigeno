@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Open+Sans&family=Oswald:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    
+
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'DynaPuff', cursive;
+    letter-spacing: 1.5px;
+   
+}
+
+
+.section__titulo {
+    text-align: center;
+    font-size: 40px;
+    color: #3719fb;
+}
+.contenedor{
+    margin: auto;
+    width: 100%;
+   
+}
+.main{
+    background: #0f1110;
+ 
+}
+
+/*--------------------Estilos del Header---------------------------*/
+.header{
+    height: 60px;
+    color: #0f1110;
+}
+.header .contenedor{
+    display: flex;
+    justify-content: space-between;
+ 
+    
+    
+}
+
+
+
+.logo, .icon-menu{
+    margin: 5px;
+    color:rgb(82, 244, 42) ;
+    font-size: 50px;
+    
+  
+
+}
+
+.icon-menu{
+   display: block; 
+   width: 40px;
+   height: 40px;
+   font-size: 30px;
+   background: #03b703;
+   color: #fff;
+   text-align: center;
+   line-height: 45px;
+   border-radius: 5px;
+   margin-left: auto;
+   cursor: pointer;
+  
+
+}
+
+/*--------------------Estilos del Menu---------------------------*/
+.nav{
+    position: absolute;
+    top: 60px;
+    left: -1000%;
+    width: 100%;
+    margin: 0px;
+    transition: 0.4s;
+    
+    
+}
+
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+   
+    
+
+
+}
+
+.menu__link{
+display: block;
+padding: 15px;
+background:#3319fb ;
+text-decoration: none;
+color: rgb(243, 247, 245);
+
+}
+
+.menu__link:hover , select{
+    background: black;
+    color: #1d19fb;
+    
+}
+.mostrar{
+left: 0;
+
+
+}
+
+
+/*--------------------Estilos del Banner---------------------------*/
+.banner{
+    margin-top: -60px;
+    position: relative;
+    z-index: -1000;
+    margin-bottom: 20px;
+   
+}
+
+.banner__img{
+    width: 100%;
+    
+    
+    
+}
+.banner .contenedor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    color: rgb(246, 246, 249);
+    text-align: center;
+
+    
+    
+
+}
+.banner__titulo{
+    font-size: 100px;
+    color: #03b703;
+    
+    
+}
+.boton{
+    background: red;
+    border-radius: 20px;
+    border: none;
+   
+}
+.banner__txt{
+    display: none;
+    font-size: 20px;
+    color: rgb(246, 240, 240);
+   
+}
+
+
+
+/*--------------------Estilos de Info---------------------------*/
+
+
+.info__columna{
+    background: #1919fb;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+   
+}
+
+
+/*--------------------Estilos de cursos---------------------------*/
+
+.cursos__columna {
+    position: relative;
+    margin-bottom: 30px;
+    
+    
+    
+    
+}
+
+.cursos__descripcion {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    width: 60%;
+    height: 100%;
+    padding: 5px;
+}
+.cursos__titulo {
+    font-size: 30px;
+    margin: 5px 0;
+    
+    
+}
+.cursos__img {
+    width: 100%;
+    
+    
+}
+
+
+
+/*--------------------Estilos del Footer---------------------------*/
+
+.footer{
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer .social [class^="icon-"]{
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+    background: rgb(12, 182, 224);
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+}
+
+/*--------------------Estilos Responsive---------------------------*/
+
+@media(min-width:480px) {
+.logo {
+    font-size: 40px;
+}
+.banner__titulo{
+    font-size: 50px;
+    margin: 5px 0;
+}
+.banner__txt {
+    display: block;
+    font-size: 30px;
+    margin: 7px 0;
+    font-family: 'DynaPuff', cursive;
+    letter-spacing: 1.5px;
+}
+.boton{
+    background: red;
+    border-radius: 20px; 
+}
+.titulo-boton{
+    width: 100%;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -90px;
+}
+.info, .cursos{
+    display: flex;
+    
+}
+.info__columna{
+    width: 33%;
+    
+}
+.info__titulo{
+    font-size: 30px;
+    margin: 5px 0;
+}
+.section__titulo{
+    width: 100%;
+}
+.cursos{
+flex-wrap: wrap;
+margin-top: 0;
+
+
+}
+.cursos__columna{
+    width: 50%;
+    padding: 1px;
+    
+   
+    
+}
+.info__titulo{
+    font-size: 30px;
+    margin:5px 0 ;
+}
+
+
+}
+.footer .social [class^="icon-"]{
+    margin: 0 10px;
+}
+
+
+@media(min-width:768px) {
+.banner__titulo{
+    font-size: 50px;
+
+}
+.cursos__titulo{
+    font-size: 40px;
+}
+
+}
+
+@media(min-width:1024px) {
+
+    .contenedor {
+        width: 1000px;
+       
+    }
+
+    .section__titulo {
+        font-size: 50px;
+        margin: 20px 0;
+    }
+
+    .banner__txt{
+        font-size: 60px;
+        
+        
+
+    }
+   
+
+    .nav {
+       position: static;
+       width: auto;
+       
+    }
+    .menu {
+        display: flex;
+    }
+    .icon-menu {
+       display: none;
+    }
+    .menu__link {
+        background: none;
+        font-size: 20px;
+    }
+    .select {
+        color: white;
+        background:#FBA919;
+    }
+
+    .banner__titulo{
+        font-size: 60px;
+    
+    }
+    .info__titulo{
+        font-size: 40px;
+        text-align: center;
+    }
+    .info__columna {
+        padding: 20px;
+        margin: 15px;
+    }
+    .cursos__descripcion {
+        padding: 20px;
+        display: flex;
+        flex-wrap:wrap ;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .cursos__titulo{
+        font-size: 50px;
+        margin: 0;
+    }
+    
+    .cursos__txt {
+        font-size: 20px;
+    }
+}
+
+ @media(min-width:1280px){
+    .contenedor {
+        width: 1200px;
+    }
+    .logo {
+        font-size: 60px;
+    }
+    .banner .contenedor {
+        top: 40%;
+    }
+    .info{
+        margin-top: -200px;
+    }
+    
+ }
