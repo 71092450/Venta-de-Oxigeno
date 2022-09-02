@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Open+Sans&family=Oswald:wght@700&display=swap');
 
@@ -417,7 +417,7 @@ margin-top: 0;
     }
     
  }
-=======
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Open+Sans&family=Oswald:wght@700&display=swap');
 
@@ -516,6 +516,7 @@ h1,h2,h3,h4,h5,h6{
     padding: 0;
     margin: 0;
     
+    
    
     
 
@@ -549,6 +550,7 @@ left: 0;
     position: relative;
     z-index: -1000;
     margin-bottom: 20px;
+    height: 1000px;
    
 }
 
@@ -768,6 +770,7 @@ margin-top: 0;
     }
     .menu {
         display: flex;
+       
     }
     .icon-menu {
        display: none;
@@ -778,7 +781,7 @@ margin-top: 0;
     }
     .select {
         color: white;
-        background:#FBA919;
+        background:#4d0596;
     }
 
     .banner__titulo{
@@ -826,4 +829,4 @@ margin-top: 0;
     }
     
  }
->>>>>>> 488bcaa67cb0cf88627f212852d2ed6592c781fc
+
