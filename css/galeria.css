@@ -4,7 +4,7 @@
 }
 
 body{
-    background: rgb(248, 249, 248);
+    background: white
 }
 
 
@@ -94,15 +94,58 @@ left: 0;
 
 
 
-.galeria img {
-  
-   width: 50%;
-   margin: 90px;
-   padding: 30px;
-   box-shadow: 5px 5px 15px  5px  ;
-   border-radius: 10px;
 
-   
+
+.contenedor-galeria{
+    display: flex;
+    width:100% ;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+    
+
+}
+
+.galeria__img {
+    width: 300px;
+    height: 400px;
+    margin-bottom: 30px;
+    object-fit: cover;
+    filter: brightness(100%);
+    cursor: pointer;
+    animation: escalar 1.6s infinite alternate;  
+    border-radius: 20px; 
+    box-shadow: 5px 8px 12px black;   
+}
+.galeria__img>p{
+    font-size: 2.6rem;
+    color: white;
+    position: absolute ;
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+@keyframes escalar{
+    to{
+        transform: scale(1);
+    }
+    from{
+        transform: scale(1.02);
+    }
+}
+
+.galeria__img:hover {
+filter: brightness(100%);
+}
+
+
+
+a,p{
+    color: black;
+    font-size: 1.2rem;
+    text-decoration: none;   
 }
 
 /*--------------------Estilos del Footer---------------------------*/
@@ -117,6 +160,7 @@ left: 0;
 .footer .social [class^="icon-"]{
     display: inline-block;
     color: #333;
+    
     text-decoration: none;
     font-size: 30px;
     padding: 10px;
