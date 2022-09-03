@@ -1,9 +1,99 @@
 * {
     box-sizing: border-box;
+    padding: 0;
 }
+
 body{
-    background: green;
+    background: rgb(248, 249, 248);
 }
+
+
+/*--------------------Estilos del Header---------------------------*/
+.header{
+    height: 60px;
+    color: #0f1110;
+}
+.header .contenedor{
+    display: flex;
+    justify-content: space-between;
+ 
+    
+    
+}
+
+
+
+.logo, .icon-menu{
+    margin: 5px;
+    color:rgb(82, 244, 42) ;
+    font-size: 50px;
+    
+  
+
+}
+
+.icon-menu{
+   display: block; 
+   width: 40px;
+   height: 40px;
+   font-size: 30px;
+   background: #03b703;
+   color: rgb(248, 243, 243);
+   text-align: center;
+   line-height: 45px;
+   border-radius: 5px;
+   margin-left: auto;
+   cursor: pointer;
+  
+
+}
+
+/*--------------------Estilos del Menu---------------------------*/
+.nav{
+    position: absolute;
+    top: 60px;
+    left: -1000%;
+    width: 100%;
+    margin: 0px;
+    transition: 0.4s;
+    
+    
+}
+
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    
+   
+    
+
+
+}
+
+.menu__link{
+display: block;
+padding: 15px;
+background:#3319fb ;
+text-decoration: none;
+color: rgb(243, 247, 245);
+
+}
+
+.menu__link:hover , select{
+    background: black;
+    color: #1d19fb;
+    
+}
+.mostrar{
+left: 0;
+
+
+}
+
+
+
 .galeria img {
   
    width: 50%;
@@ -11,6 +101,27 @@ body{
    padding: 30px;
    box-shadow: 5px 5px 15px  5px  ;
    border-radius: 10px;
+
    
-   
+}
+
+/*--------------------Estilos del Footer---------------------------*/
+
+.footer{
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer .social [class^="icon-"]{
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+    background: rgb(12, 182, 224);
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
 }
